@@ -1,0 +1,24 @@
+___________________________________________________________________________________
+
+27/06 VERY IMP REDUX
+___________________________________________________________________________________
+Redux:
+1, Its a JS library for state management
+    Components:
+    1, store - State is created inside the store rather than creating in the parent (store.js file)
+       a,State can be globally accessible
+       b, configureStore() :  function to create store
+    2, action : it holds the logic to update the state. (state needs to call the action for any changes and cannot change directly)
+        a, dispatch: calling the action file
+        b, hook is used called useDispatch()
+        c, payload : output of action
+        d, createAction() - funciton to create action
+    3, reducer : this can only update store
+        a, createReducer : function to create reducer
+
+    To Access state from Store -> Component = useSelector()
+
+2, Redux Toolkit:
+ 1, Slice : it has both action and reducer files in single file
+ 2, in toolkit action and reducer are not consirered as seperate files
+ 3, slice returns both action(logic to update state) and reducer (ability to update the state)
