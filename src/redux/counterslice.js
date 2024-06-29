@@ -17,12 +17,15 @@ export const counterSlice = createSlice({
             },
             reset:(state)=>{
                 state.value = 0
+            },
+            rangeChange:(state,action)=>{
+                state.value += action.payload
             }
         }
 })
 
 // actions are for the components
-export const {increment, decrement, reset} = counterSlice.actions
+export const {increment, decrement, reset,rangeChange} = counterSlice.actions
 
 // reducer is for store
 export default counterSlice.reducer
